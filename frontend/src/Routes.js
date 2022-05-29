@@ -4,6 +4,7 @@ import Home from "./containers/Home";
 import NotFound from "./containers/NotFound";
 import Login from "./containers/Login";
 import ResetPassword from "./containers/ResetPassword";
+import Settings from "./containers/Settings";
 import Signup from "./containers/Signup";
 import NewNote from "./containers/NewNote";
 import Notes from "./containers/Notes";
@@ -22,6 +23,9 @@ export default function Routes() {
       </UnauthenticatedRoute>
       <UnauthenticatedRoute exact path="/signup">
         <Signup />
+      </UnauthenticatedRoute>
+      <UnauthenticatedRoute exact path="/login/reset">
+        <ResetPassword />
       </UnauthenticatedRoute>
       <AuthenticatedRoute exact path="/settings">
         <Settings />
