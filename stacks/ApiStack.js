@@ -15,6 +15,7 @@ export default class ApiStack extends sst.Stack {
       defaultFunctionProps: {
         environment: {
           TABLE_NAME: table.tableName,
+          MEMBERKIT_SECRET_KEY: process.env.MEMBERKIT_SECRET_KEY,
         },
       },
       routes: {
